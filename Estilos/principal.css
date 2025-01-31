@@ -13,8 +13,8 @@ header {
 }
 
 body {
-    /* background-image: url('../img/fondo-restaurante.webp'); */
-    background-image: url('../img/restaurante-asturiano.png');
+    background-image: url('../img/fondo1.jpg');
+    /* background-image: url('../img/restaurante-asturiano.png'); */
     height: 100vh;
     background-color: #0000000a;
     background-size: cover;

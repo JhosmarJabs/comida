@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña - Paso 3</title>
+    <link rel="stylesheet" href="../Estilos/recuperacion.css">
+    <script>
+        function enviarToken() {
+            alert("Token de recuperación enviado a tu correo.");
+        }
+    </script>
+</head>
+<div class="contenedor-recuperacion">
+
+
+<div class="recuperacion-container">
+    <h2>Recuperación de Contraseña</h2>
+    <button class="recuperacion-button" onclick="enviarToken()">Enviar Token de Recuperación</button>
+    <br>
+    <input type="text" class="recuperacion-input" id="codigo" placeholder="Código de 6 dígitos">
+    <br>
+    <button class="recuperacion-button" onclick="location.href='recuperar_paso4.html'">Siguiente</button>
+</div>
+
+</div>
+</html>

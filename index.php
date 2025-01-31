@@ -16,7 +16,7 @@ class Aplicacion {
     }
 
     private function cargarControlador($clase, $metodo) {
-        $rutaArchivo = "Controlador/" . $clase . ".php";
+        $rutaArchivo = "controlador/" . $clase . ".php";
 
         if (file_exists($rutaArchivo)) {
             require_once $rutaArchivo;

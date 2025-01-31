@@ -1,4 +1,4 @@
-/* Estilos para Inicio de Sesion */
+/* Estilos para Inicio de Sesión */
 .container-login {
     min-height: calc(100vh - 60px);
     display: flex;
@@ -7,7 +7,7 @@
     background-size: cover;
     background-position: center;
     box-sizing: border-box;
-}   
+}
 
 .wrapper {
     position: relative;
@@ -26,7 +26,7 @@
 }
 
 .wrapper.active {
-    height: 690px;
+    height: 750px;
 }
 
 .wrapper .form-box {
@@ -35,7 +35,7 @@
     padding: 40px;
 }
 
-.wrapper .form-box.login{
+.wrapper .form-box.login {
     transition: transform .2s ease;
     transform: translateX(0);
 }
@@ -62,7 +62,7 @@
     right: 0;
     width: 45px;
     height: 45px;
-    background: #92890f;
+    background: #ffe607;
     font-size: 2rem;
     color: #fff;
     display: flex;
@@ -77,6 +77,18 @@
     font-size: 2em;
     color: #ffffff;
     text-align: center;
+}
+
+/* Alineación de Nombre y Apellido */
+.name-container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.name-container .input-box {
+    flex: 1;
 }
 
 .input-box {
@@ -98,6 +110,7 @@
     pointer-events: none;
     transition: 0.5s;
 }
+
 /* Animación solo si el campo tiene contenido */
 .input-box input.filled~label {
     top: -1px;
@@ -112,7 +125,6 @@
     color: #ffffff;
     cursor: pointer;
 }
-
 
 .input-box input {
     width: 100%;
@@ -136,7 +148,7 @@
 
 .remember-forgot {
     font-size: .9em;
-    color: #92890f;
+    color: #ffe607;
     font-weight: 500;
     margin: -15px 0 15px;
     display: flex;
@@ -144,19 +156,19 @@
 }
 
 .remember-forgot label input {
-    accent-color: #92890f;
+    accent-color: #ffe607;
     margin-right: 3px;
 }
 
 .remember-forgot a {
-    color: #92890f;
+    color: #ffe607;
     text-decoration: none;
 }
 
 .btn {
     width: 100%;
     height: 45px;
-    background: #92890f;
+    background: #ffe607;
     border: none;
     outline: none;
     border-radius: 6px;
@@ -168,7 +180,7 @@
 
 .login-register {
     font-size: .9em;
-    color: #92890f;
+    color: #ffe607;
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
@@ -190,4 +202,3 @@
     margin-top: 5px;
     text-align: left;
 }
-

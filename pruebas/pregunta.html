@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña - Paso 2</title>
+    <link rel="stylesheet" href="../Estilos/recuperacion.css">
+</head>
+<div class="contenedor-recuperacion">
+
+<div class="recuperacion-container">
+    <h2>Selecciona tu pregunta secreta</h2>
+    
+    <select class="recuperacion-select" id="pregunta">
+        <option value="" disabled selected>Selecciona una pregunta</option>
+        <option value="mascota">¿Cuál es el nombre de tu primera mascota?</option>
+        <option value="escuela">¿Cómo se llama la escuela donde estudiaste?</option>
+        <option value="madre">¿Cuál es el segundo nombre de tu madre?</option>
+        <option value="ciudad">¿En qué ciudad naciste?</option>
+        <option value="mejoramigo">¿Cómo se llama tu mejor amigo/a de la infancia?</option>
+        <option value="comida">¿Cuál es tu comida favorita?</option>
+    </select>
+
+    <br>
+
+    <h2>Ingresa la respuesta</h2>
+    <input type="text" class="recuperacion-input" id="respuesta" placeholder="Escribe tu respuesta">
+    
+    <br>
+    <button class="recuperacion-button" onclick="validarYContinuar()">Siguiente</button>
+</div>
+
+<script>
+    function validarYContinuar() {
+        const pregunta = document.getElementById("pregunta").value;
+        const respuesta = document.getElementById("respuesta").value.trim();
+
+        if (pregunta === "" || respuesta === "") {
+            alert("Por favor, selecciona una pregunta y escribe una respuesta.");
+            return;
+        }
+
+        location.href = 'recuperar_paso3.html';
+    }
+</script>
+</div>
+</html>

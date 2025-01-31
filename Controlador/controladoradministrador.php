@@ -1,27 +1,19 @@
 <?php
-include_once 'Modelo/clsregistros.php';
-include_once 'Modelo/clsreportes.php';
-
 session_start();
 
-class controladoradministrador
+class ControladorAdministrador
 {
-	private $vista;
-	
+    private $vista;
+
     public function inicio()
     {
-
-        $vista = "Vistas/Administrador/frmAltas.php";
-        include_once("Vistas/frmadministrador.php");
-    }
-
-    public function inventario(){
-        
+        $vista = "vistas/administrador/altas.php";
+        include_once("vistas/frm-administrador.php");
     }
 
     public function cerrar()
-	{		
-		session_destroy();
-		header('location:index.php');
-	}
+    {        
+        session_destroy();
+        header('Location: index.php');
+    }
 }

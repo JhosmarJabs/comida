@@ -1,13 +1,12 @@
 <?php
-include_once 'Modelo/clsconexion.php';
+include_once 'modelo/ClsConexion.php';
 
-class clscliente extends clsconexion{
-
-
-    public function ExtraerDatos($id) {
-        $result=$this->conectar->query("CALL spConsultarUsuario('$id')");
-        $resp=$result->fetch_assoc();
-        return $resp;
+class ClsCliente extends ClsConexion
+{
+    public function ExtraerDatos($id)
+    {
+        $result = $this->conectar->query("CALL spConsultarUsuario('$id')");
+        return $result->fetch_assoc();
     }
 }
 ?>

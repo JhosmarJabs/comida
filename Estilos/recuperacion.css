@@ -1,0 +1,74 @@
+/* Estilos generales */
+.contenedor-recuperacion {
+    min-height: calc(92vh - 50px);
+    display: flex;
+    justify-content: center;
+    /* Centrar horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente */
+    margin: 0;
+}
+
+/* Contenedor genérico para todas las páginas */
+.recuperacion-container {
+    width: 90%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.6);
+    /* Opcional: fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Inputs, botones y select con estilo unificado */
+.recuperacion-input,
+.recuperacion-select,
+.recuperacion-button {
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Estilo para botones */
+.recuperacion-button {
+    background: yellow;
+    cursor: pointer;
+}
+
+/* Contenedor del código de 6 dígitos */
+.codigo-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Estilos de los 6 inputs del código */
+.codigo-input {
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* Cambia el color del borde cuando el input está activo */
+.codigo-input:focus {
+    border-color: yellow;
+    outline: none;
+}
+
+/* Estilo del separador "-" */
+.codigo-separador {
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 5px;
+}

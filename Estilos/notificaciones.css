@@ -1,0 +1,37 @@
+.notificacion {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 1000;
+    font-size: 18px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.notificacion.exito {
+    background-color: #4CAF50;
+}
+
+.notificacion.error {
+    background-color: #D32F2F;
+}
+
+.btn-cerrar {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: white;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-cerrar:hover {
+    background-color: #ddd;
+}
